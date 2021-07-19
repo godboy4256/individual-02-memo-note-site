@@ -12,14 +12,16 @@ setInterval(timeChecking,1000)
 //현재 시간
 
 function dateChecking(){
-    const nowMon = String(new Date().getMonth())
-    const nowDat = String(new Date().getDate())
     const nowYea = String(new Date().getFullYear())
-    date.innerText = `${nowYea}/${nowMon}/${nowDat}`
+    const nowMon = String(new Date().getMonth()+1)
+    const nowDat = String(new Date().getDate())
+    date.innerText = `${nowYea} . ${nowMon} . ${nowDat}`
 }
 dateChecking()
-setInterval(dateChecking,86400)
+setInterval(dateChecking,1000)
 //현재 날짜
+
+console.dir(new Date())
 
 
 

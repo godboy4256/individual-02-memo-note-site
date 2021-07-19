@@ -1,1 +1,24 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+/* font */
+
+@import url(fonts.css);
+@import url(var.css);
 @import url(background_images.css);
+@import url(times_info.css);
+@import url(famaus-sayings.css);
+@import url(memo_app.css);
+
+*{
+    margin:0;
+    padding: 0;
+    outline: none;
+}
+
+textarea,input{
+    border: none;
+    background: none;
+}
+body{
+    background-color: #000;
+}

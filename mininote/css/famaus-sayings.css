@@ -1,0 +1,22 @@
+#famaus-sayings-box{
+    background-color: rgba(255, 255, 255,0.5);
+    max-width:500px;
+    width: 100%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#famaus-sayings-box #who-saying{
+    font-size: 35px;
+    color: gold;
+    font-family: 'Nanum Pen Script', cursive
+}
+
+#famaus-sayings-box #famaus-saying{
+    font-size: 40px;
+    padding-top:10px;
+    font-family: 'Nanum Pen Script', cursive
+}

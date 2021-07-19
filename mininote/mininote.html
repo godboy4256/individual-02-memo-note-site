@@ -28,24 +28,30 @@
     <div id="memo-app">
       <form id="memo-area">
         <input type="text" id="memo-title-input" maxlength="20" placeholder="메모 제목을 입력하세요"/>
-        <textarea style="width:500px;height:500px;" id="memo-main-input" placeholder="메모 내용을 입력하세요"></textarea>
+        <textarea id="memo-main-input" placeholder="메모 내용을 입력하세요" cols="50" rows="8"></textarea>
         <input type="submit" value="작성완료" id="memo-save">
       </form>
 
-      <div>
-       <input type="button" value="삭제하기" id="delet-button">
+      <div id="delet-button-box">
+       <div id="save-list-header">
+        <h3>저장된 메모 리스트</h3>
+        <form>
+         <input type="button" value="삭제하기" id="delet-button">
+        </form>
+       </div>
+
        <ul id="memo-list">  
        </ul>
       </div>
-
-      <div id="memo-popup">
-        <h2 id="memo-title"></h2>
-        <p id="memo-main"></p>
-        <span id="close"></span>
-      </div>
     </div> <!--메모장-->
-    
-    <input type="checkbox">
+  
+    <div id="memo-popup">
+      <h2 id="memo-title"></h2>
+      <p id="memo-main"></p>
+      <span id="close">
+      </span>
+    </div>
+
     <script src="js/random_background.js"></script>
     <script src="js/times_info.js"></script>
     <!-- <script src="js/whether_and_location.js"></script> -->

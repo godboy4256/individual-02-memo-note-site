@@ -1,0 +1,155 @@
+#memo-app{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+#memo-area{
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+    width: 850px;
+}
+
+#memo-title-input{
+    padding:15px;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: 'Nanum Pen Script', cursive;
+    border-bottom: 1px solid #fff;
+    transition: 0.4s;
+}
+#memo-main-input{
+    height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: 'Nanum Pen Script', cursive
+}
+
+
+#memo-save{
+    padding: 20px;
+    background-color:rgba(255, 217, 0);
+    font-family: 'Nanum Pen Script', cursive;
+    font-size:30px;
+    cursor: pointer;
+}
+
+#delet-button-box{
+    width:100%;
+    padding:30px;
+    box-sizing: border-box;
+}
+
+#save-list-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#save-list-header h3{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 30px;
+}
+
+#delet-button-box #delet-button{
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size:22px;
+    text-align: center;
+    background-color:gold;
+    cursor: pointer;
+}
+
+
+#memo-list{
+    margin-top: 20px;
+    background-color: gold;
+    width:100%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    height: 200px;
+}
+
+#memo-list > li{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding:10px;
+    font-family: 'Nanum Pen Script', cursive;
+    box-sizing: border-box;
+}
+.inner-title{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.inner-main{
+    display: none;
+}
+
+
+#memo-popup{
+   position: fixed;
+   top:50%;
+   left:50%;
+   width: 700px;
+   height: 700px;
+   transform: translate(-50%,-50%);
+   background-color: #fff;
+   transition: 0.4s;
+   padding: 30px;
+   box-sizing: border-box;
+}
+
+#memo-popup #memo-title{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Nanum Pen Script', cursive;
+    border-bottom: 1px solid gold;
+    padding-bottom:10px;
+    box-sizing: border-box;
+}
+
+#memo-popup #memo-main{
+    width: 100%;
+    font-size: 25px;
+    font-family: 'Nanum Pen Script', cursive;
+    padding-top:10px;
+    height:500px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+#close{
+    display: block;
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    top:40px;
+    left:-50px;
+}
+#close span{
+    display: block;
+    background-color:gold;
+    width: 100%;
+    height: 4px;
+    transition: 0.4s;
+}
+
+#close span:first-child{
+    transform: rotate(-45deg);
+    transform-origin: left top;
+}
+
+#close span:last-child{
+    transform: rotate(45deg);
+    position: relative;
+    transform-origin: left bottom;
+}
+/* scale(0); */
+
+

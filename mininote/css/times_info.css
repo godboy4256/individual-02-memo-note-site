@@ -1,0 +1,27 @@
+#times-info{
+    max-width:500px;
+    background-color: rgba(0, 0, 0,0.5);
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    padding:40px;
+    box-sizing: border-box;
+}
+
+#times-info #time{
+    font-size:100px;
+    line-height:1;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#times-info #date{
+    font-size:30px;
+    color:gold;
+    line-height:1;
+    padding-top: 5px;
+}
