@@ -25,9 +25,23 @@
       <span id="famaus-saying"></span>
     </div> <!--명언이 있는 상자-->
 
+    <div id="memo-app">
+      <form id="memo-area">
+        <input type="text" id="memo-title-input" maxlength="20" placeholder="메모 제목을 입력하세요"/>
+        <textarea style="width:500px;height:500px;" id="memo-main-input" placeholder="메모 내용을 입력하세요"></textarea>
+        <input type="submit" value="작성완료" id="memo-save">
+      </form>
+      <ul id="memo-list">  
+      </ul>
+      <div id="memo-popup">
+        <h2 id="memo-title"></h2>
+        <p id="memo-main"></p>
+        <span id="close"></span>
+      </div>
+    </div> <!--메모장-->
     <script src="js/random_background.js"></script>
     <script src="js/times_info.js"></script>
-    <script src="js/whether_and_location.js"></script>
+    <!-- <script src="js/whether_and_location.js"></script> -->
     <script src="js/famaus_sayings.js"></script>
     <script src="js/mininote.js"></script>
 </body>
