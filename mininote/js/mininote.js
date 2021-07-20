@@ -17,9 +17,6 @@ function noevent(event){
     event.preventDefault()
 }
 
-function deleteTarget(){
-   
-}
 
 function memoListsPopUp(){
    const innerMain = this.querySelector('.inner-main')
@@ -28,7 +25,12 @@ function memoListsPopUp(){
          ,innerTitleText = innerTitle.innerText
    memoMain.innerText = innerMainText
    memoTitle.innerText = innerTitleText
+   memoPopUp.classList.add('scale')
 }
+
+close.addEventListener('click',function(){
+    memoPopUp.classList.remove('scale')
+})
 
 function memoCreative(memoTitleInputValue,memoMainInputValue){
 

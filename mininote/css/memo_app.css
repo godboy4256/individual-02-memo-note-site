@@ -71,7 +71,7 @@
     background-color: gold;
     width:100%;
     box-sizing: border-box;
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 200px;
 }
 
@@ -99,7 +99,7 @@
    left:50%;
    width: 700px;
    height: 700px;
-   transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%) scale(0);
    background-color: #fff;
    transition: 0.4s;
    padding: 30px;
@@ -140,16 +140,11 @@
     transition: 0.4s;
 }
 
-#close span:first-child{
-    transform: rotate(-45deg);
-    transform-origin: left top;
-}
 
-#close span:last-child{
-    transform: rotate(45deg);
-    position: relative;
-    transform-origin: left bottom;
-}
-/* scale(0); */
 
+/*classList */
+#memo-popup.scale{
+    transform: translate(-50%,-50%) scale(1);
+}
+/*classList */
 
