@@ -21,8 +21,6 @@ dateChecking()
 setInterval(dateChecking,1000)
 //현재 날짜
 
-console.dir(new Date())
-
 
 
 

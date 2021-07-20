@@ -8,6 +8,7 @@ const memoArea = document.querySelector('#memo-area')
      ,memoMain = document.querySelector('#memo-main')
      ,memoDelete = document.querySelector('#delet-button')
      ,close = document.querySelector('#close')
+     ,memoApp = document.querySelector('#memo-app')
 
      let n = 0
      let memoSavingList = []
@@ -18,7 +19,8 @@ function noevent(event){
 }
 
 
-function memoListsPopUp(){
+function memoListsPopUp(event){
+    event.stopImmediatePropagation()
    const innerMain = this.querySelector('.inner-main')
          ,innerTitle = this.querySelector('.inner-title')
          ,innerMainText = innerMain.innerText
@@ -43,6 +45,7 @@ function memoCreative(memoTitleInputValue,memoMainInputValue){
     ctMainValue.innerText = memoMainInputValue
     ctdeleteinput.type = "checkbox"     
     ctdeleteinput.addEventListener('change',function(){
+        memoPopUp.classList.remove('scale')
         this.parentElement.classList.toggle('del')
         memoDelete.addEventListener('click',function(){
          document.querySelectorAll('.del').forEach(item => {
@@ -63,7 +66,6 @@ function memoCreative(memoTitleInputValue,memoMainInputValue){
         ctt:memoTitleInputValue,
         ctm:memoMainInputValue
     }
-
     const memoData = ctMemoObject
     memoSavingList.push(memoData)
     const memusavingString = JSON.stringify(memoSavingList)
@@ -75,9 +77,11 @@ function memoCreative(memoTitleInputValue,memoMainInputValue){
 function setMemo(){
     const ifMemoInputLength = memoMainInput.value.length 
          ,ifMemoTitleLength = memoTitleInput.value.length
-    if(ifMemoInputLength > 0 &&  ifMemoTitleLength > 0){
+    if(ifMemoInputLength > 0 ||  ifMemoTitleLength > 0){
         memoCreative(memoTitleInput.value,memoMainInput.value)
     }  
+    memoTitleInput.value = ""
+    memoMainInput.value = ""
 }
 
 function loadingSaveMemos(){
@@ -89,10 +93,22 @@ function loadingSaveMemos(){
    }
 }
 
+function memoMainfocus(){
+    memoApp.classList.add('white-back')
+    memoTitleInput.classList.add('border-color-change')
+}
+function memoMainblur(){
+    memoApp.classList.remove('white-back')
+    memoTitleInput.classList.remove('border-color-change')
+}
 
 loadingSaveMemos()
 memoArea.addEventListener('submit',noevent)
 memoSave.addEventListener('click',setMemo)
+memoMainInput.addEventListener('focus',memoMainfocus)
+memoMainInput.addEventListener('blur',memoMainblur)
+memoTitleInput.addEventListener('focus',memoMainfocus)
+memoTitleInput.addEventListener('blur',memoMainblur)
 
 
 

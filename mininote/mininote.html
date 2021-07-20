@@ -5,55 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div id="random-background"></div> <!--랜덤 배경 화면-->
-
-    <div id="times-info">
-      <span id="time"></span>
-      <span id="date"></span>
+  </head>
+  <body>
+  <div id="random-background"></div> <!--랜덤 배경 화면-->
+   <div id="times-info">
+     <span id="time"></span>
+     <span id="date"></span>
     </div> <!--현재 날짜와 시간-->
-
+    
     <div id="whether-and-location-box">
-        <span id="whether"></span>
-        <span id="location"></span>
+      <span id="whether"></span>
+      <span id="location"></span>
     </div> <!--날씨 및 위치 정보-->
-
+    
     <div id="famaus-sayings-box">
       <span id="who-saying"></span>
       <span id="famaus-saying"></span>
     </div> <!--명언이 있는 상자-->
-
+    
     <div id="memo-app">
       <form id="memo-area">
-        <input type="text" id="memo-title-input" maxlength="20" placeholder="메모 제목을 입력하세요"/>
+        <input autocomplete="off" type="text" id="memo-title-input" maxlength="20" placeholder="메모 제목을 입력하세요"/>
         <textarea id="memo-main-input" placeholder="메모 내용을 입력하세요" cols="50" rows="8"></textarea>
         <input type="submit" value="작성완료" id="memo-save">
       </form>
-
+      
       <div id="delet-button-box">
-       <div id="save-list-header">
-        <h3>저장된 메모 리스트</h3>
-        <form>
-         <input type="button" value="삭제하기" id="delet-button">
-        </form>
-       </div>
-
-       <ul id="memo-list">  
-       </ul>
+        <div id="save-list-header">
+          <h3>저장된 메모 리스트</h3>
+          <form>
+            <input type="button" value="삭제하기" id="delet-button">
+          </form>
+        </div>
+        <ul id="memo-list">  
+        </ul>
       </div>
     </div> <!--메모장-->
-  
+    
     <div id="memo-popup">
       <h2 id="memo-title"></h2>
       <p id="memo-main"></p>
       <span id="close">
-        <span></span>
-        <span></span>
+        <i class="fas fa-times"></i>
       </span>
     </div>
-
+    <div id="intro-background">
+      <i class="far fa-star"></i>
+    </div>
     <script src="js/random_background.js"></script>
     <script src="js/times_info.js"></script>
     <!-- <script src="js/whether_and_location.js"></script> -->

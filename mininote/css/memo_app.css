@@ -1,16 +1,24 @@
 #memo-app{
+    width:750px;
     position: absolute;
     right: 0;
     bottom: 0;
     height: 100%;
     background-color: rgba(255, 255, 255,0.5);
+    transition: 0.4s;
 }
+
+/* classList */
+#memo-app.white-back{
+    background-color: #fff;
+    width:850px;
+}
+/* classList */
 
 #memo-area{
     display: flex;
     flex-direction: column;
     transition: 0.4s;
-    width: 850px;
 }
 
 #memo-title-input{
@@ -21,6 +29,12 @@
     border-bottom: 1px solid #fff;
     transition: 0.4s;
 }
+/* classList */
+#memo-title-input.border-color-change{
+   border-color: #000;
+}
+/* classList */
+
 #memo-main-input{
     height: 500px;
     padding: 20px;
@@ -92,7 +106,6 @@
     display: none;
 }
 
-
 #memo-popup{
    position: fixed;
    top:50%;
@@ -130,16 +143,12 @@
     cursor: pointer;
     position: absolute;
     top:40px;
-    left:-50px;
+    left:-60px;
 }
-#close span{
-    display: block;
-    background-color:gold;
-    width: 100%;
-    height: 4px;
-    transition: 0.4s;
+.fas.fa-times{
+    font-size:50px;
+    color: gold;
 }
-
 
 
 /*classList */
