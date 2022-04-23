@@ -1,18 +1,25 @@
-# 개인 프로젝트 ( 학습 ) 01 : 카카오톡 UI 클론 코딩
+# 개인 프로젝트 ( 학습 ) 02 : 미니 메모장
 
-<p align="center"><img src="https://play-lh.googleusercontent.com/8_0SDfkFXAFm12A7XEqkyChCdGC055J6fC8JR7qynNuO3qNOczIoNHo4U4lad8xYMJOL"></p>
+<p align="center"><img src="https://us.123rf.com/450wm/djvstock/djvstock1612/djvstock161201561/67263022-%EB%A9%94%EB%AA%A8%EC%9E%A5-%EB%B0%8F-%EC%97%B0%ED%95%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B2%A1%ED%84%B0-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%A0%88%EC%9D%B4-%EC%85%98-%EB%94%94%EC%9E%90%EC%9D%B8.jpg?ver=6"></p>
 
 &nbsp;
 &nbsp;
 
 ## 학습 목표
-HTML 과 CSS 활용과 레이아웃 구조의 기본
+자바스크립트 기본 문법과 DOM 제어 HTML 과 CSS 활용 숙련
 
 &nbsp;
 &nbsp;
 
 ## 설명
-HTML 태그, 그리고 CSS의 수 많은 속성들에 대한 활용법을 공부하기 위한 카카오톡의 UI를 클론 코딩했습니다. UI만을 클론 코딩했기 때문에 실제로 카카오톡의 채팅,소셜,로그인 등의 기능들이 작동하지는 않습니다. 해당 클론 코딩 프로젝트는 학습용 개인 프로젝트이며 노마드코더 코코아톡 클론 코딩 강의 ( https://nomadcoders.co/kokoa-clone ) 를 참고하여 진행하였습니다.
+자바스크립트 기본 문법을 공부하고 HTML과 CSS로 구조화되어 있는 웹 페이지에 자바스크립트의 DOM 제어 문법을 적용해보면서 자바스크립트를 활용하여 웹 브라우저를 제어하는 방법을 공부하기 위해 만든 학습용 개인 프로젝트입니다. 많은 개발자들이 자바스크립트의 기본 문법을 공부하기 위해서 만들어 보면 좋을 미니 프로젝트로 투두리스트 앱을 추천하고 있고 이에 따라 투두리스트 기능에서 좀 더 추가된 기능이 필요한 메모장 기능을 이번 미니 프로젝트로 선정 했습니다.  노마드코더 바닐라 JS로 크롬앱 만들기 강의 ( https://nomadcoders.co/javascript-for-beginners ) 를 참고하여 프로젝트를 진행하였고 자바스크립트를 활용하여 웹 페이지가 좀 더 똑똑해지는 과정을 공부할 수 있습니다.
+
+## 설명
+&nbsp;
+&nbsp;
+
+## 기능
+카카오톡 UI
 
 &nbsp;
 &nbsp;
@@ -64,5 +71,7 @@ HTML 태그, 그리고 CSS의 수 많은 속성들에 대한 활용법을 공부
 4. CSS 속성을 사용한 웹 페이지 스타일링과 스타일 적용 대상 선택자 지정
 5. 웹 페이지에 대한 간단한 반응형 적용법
 6. 애니메이션과 트랜지션을 마우스 호버, 포커스 등의 인터렉티브 한 모션 적용법
+
+
 
 
