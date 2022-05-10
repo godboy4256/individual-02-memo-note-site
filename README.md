@@ -30,9 +30,11 @@
 
 ## 활용 스택
 
-### <img src="https://user-images.githubusercontent.com/82381946/164891265-22b836be-a36a-411f-8e50-f7e400d3f0cb.png"  width="50"/> <p>HTML</p> 
-### <img src="https://user-images.githubusercontent.com/82381946/164891267-2360c764-827e-4661-9842-a1fd29a41b57.png"  width="50"/>  <p>CSS</p> 
-### <img src="https://user-images.githubusercontent.com/82381946/164911440-7d74eb84-4148-4ae6-a2d7-37b4ecba3e05.png"  width="50"/><p>JAVASCRIPT</p> 
+<div style="display:flex;flex-wrap:wrap">
+ <img src="https://img.shields.io/badge/html5-E34F26?&logo=html5&logoColor=white"> 
+ <img src="https://img.shields.io/badge/css-1572B6?&logo=css3&logoColor=white"> 
+ <img src="https://img.shields.io/badge/javascript-F7DF1E?&logo=javascript&logoColor=white">
+</div>
 
 &nbsp;
 &nbsp;
